@@ -1,0 +1,27 @@
+.card{
+    border:1px solid black;
+    margin-top:50px;
+    width: 70%;   
+    background: #f1f1f1;
+}
+
+.img-resp{
+    width: 100%;
+}
+
+.card-title,.card-lien,.card-text{
+    margin-left: 15px;
+}
+
+.card-title{
+    padding: 15px 0;
+    height: auto;
+}
+
+.card-lien{
+    padding: 10px 0;
+}
+
+.lien1{
+    margin-right: 25px;
+}
