@@ -1,0 +1,88 @@
+body {
+  height: 1000px;
+  width: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Heritage */
+.d1 {
+ 
+  margin:20px; 
+  height: 150px;
+  width: 150px;
+}
+/* margin */
+
+.d2 {   
+  margin:70px; 
+  /* height: 100px; */
+  width: 100px;
+}
+
+.d3 {    
+  height: 50px;
+  width: 50px;
+}
+
+/* padding */
+
+.d4 {   
+  padding:70px; 
+  /* height: 100px; */
+  width: 150px;
+}
+
+.d5 {    
+  height: 50px;
+  padding-left:70px; 
+  width: 100px;
+}
+
+.d6 {    
+  width: 50px;
+  padding-bottom: 50px;
+}
+
+strong{
+  margin:0 15px;
+  background: rgb(103, 192, 204);
+  /* margin: 100px 0px; */
+  font-size: 1.5em;
+}
+
+.mi{
+  height: 50px;
+}
+
+span.sp{
+  background: rgb(214, 135, 178);
+  padding: 50px;
+  /* height: 100px; */
+  /* width: 100px; */
+  /* vertical-align:top; */
+  text-decoration: underline overline;
+  /* line-height: 3; */
+
+}
+
+a{
+  background: rgb(228, 230, 165);
+}
+
+img{
+  background: rgb(184, 130, 216);
+  /* vertical-align: baseline; */
+}
+
+.b{
+    border: 1px solid black;
+}
+
+.r{
+    border: 1px solid red;
+}
+
+.g{
+    border: 1px solid green;
+}

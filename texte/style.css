@@ -1,0 +1,84 @@
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.inline1{
+text-align: center;
+height: 100px;
+/* vertical-align:bottom; */
+word-spacing: 15px;
+line-height: 100px;
+vertical-align: top;
+}
+
+.inline1 strong{
+  /* white-space:nowrap; */
+  /* vertical-align:bottom; */
+  letter-spacing: 10px;
+  
+ 
+}
+
+.inline1 span{
+ vertical-align:bottom;
+ 
+}
+
+
+.inline2{
+  /* height: 50px; */
+}
+
+.inline2 strong{
+vertical-align: top;
+}
+
+.inline2 span{
+  vertical-align:bottom;
+  line-height: 2;
+}
+
+
+
+
+
+/* Heritage */
+.d1 {
+ text-align: center;  
+ color:red;
+ font-size: 30px;
+ font-style: italic;
+ font-family: serif;
+ font-weight: bold;
+ letter-spacing: 10px;
+ word-spacing:100px;
+ text-transform: capitalize;
+ text-decoration: underline;
+ height: 150px;
+ /* width: 150px; */
+}
+
+.d2 {   
+  height: 100px;
+  /* width: 100px; */
+}
+
+.d3 {    
+  height: 50px;
+  /* width: 50px; */
+}
+
+.b{
+    border: 1px solid black;
+}
+
+.r{
+    border: 1px solid red;
+}
+
+.g{
+    border: 1px solid green;
+}

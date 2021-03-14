@@ -1,0 +1,70 @@
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box1{
+  padding: 15px;
+  width: 250px;
+  height: 300px;
+  margin: 20px;
+  box-shadow:0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+.box1 h2{
+  color: red;
+  text-shadow:5px 5px 10px rgba(0, 0, 0, 0.8);
+  
+}
+
+.box2{
+  width: 250px;
+  height: 300px;
+  margin: 20px;
+  box-shadow:0px 0px 15px 0px rgba(0, 0, 0, 0.5) inset;
+}
+
+h2{
+  text-align: center;
+ 
+}
+
+.box3 img{
+  margin-left: 30px;
+  filter: drop-shadow(5px 5px 15px #3463B1);
+}
+
+
+/* Heritage */
+.d1 {
+  /* padding-left: 50px; */
+  
+  height: 150px;
+  width: 150px;
+  box-shadow:0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+.d2 {   
+  height: 100px;
+  width: 100px;
+}
+
+.d3 {    
+  height: 50px;
+  width: 50px;
+}
+
+.b{
+    border: 1px solid black;
+}
+
+.r{
+    border: 1px solid red;
+}
+
+.g{
+    border: 1px solid green;
+}
