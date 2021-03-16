@@ -1,0 +1,141 @@
+html{
+  font-size: 40px;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+h4{
+  text-decoration: underline;
+}
+
+/****************em ****************/
+.em{
+  margin:10px;
+}
+.em span{
+  background: rgb(148, 192, 174);
+}
+
+.parent{
+  font-size: 10px;
+}
+
+.child1{
+  font-size: 1.5em;/*15px*/
+}
+
+.child2{
+  font-size: 1.5em;/*15px*/
+}
+
+.little-child2{
+  font-size: 2em;
+  /*
+  30px
+  2em correspond a 2 fois la police de son parent child 1
+  =2*15=30
+  ou a 2*1.5=3 fois la police de son grand pere 3*10=30  
+  */  
+}
+
+li{
+  font-size: 1.5em;
+  /*
+  Le navigateur a une police de 20px;
+  Les listes Liste1 et Liste2 auront 1.5*20=30px
+  Par contre ss List1/2 auront 30*1.5=20*1.5*1.5=45px 
+  */
+}
+
+/* em marge et padding  */
+
+/*size et margin top et bottom ont 1.17em*20=23.4px*/
+h3.marge{
+  font-size: 40px;/*marge topt bottom 30px*/
+  font-size: 1.8em;/*marge=1em*{font-size de h3}*/ 
+  border:1em solid; 
+  padding: 1em;
+  /*marge padding et border ont leur parent = h3*/
+}
+
+/*bouton em et padding*/
+.btn{
+  margin: auto;
+  display: inline-block;
+  background: #18a085;
+  color: #f1f1f1;  
+  padding: 10px 20px;
+ 
+}
+
+.big{
+  font-size: 2em;/*padding reste a 10 et 20px*/
+}
+
+.btn2{
+  margin: auto;
+  display: inline-block;
+  background: #18a085;
+  color: #f1f1f1;  
+  padding: 0.5rem 1rem;
+   /*si html 20px donc 1rem=20 0.5rem=10px*/
+  /*si html 40px donc 1rem=40 0.5rem=20px*/
+ 
+}
+.big2{
+  font-size: 1rem;/*=20 a 40px si html 20 a 40px*/
+  /*en rem les proportions entre la taille de la police et le padding sont conservées*/
+}
+
+
+/*Avantage pour un bouton si la taille de police augmente 
+le padding augmente aussi et les proportions sont conservées
+*/
+
+/*Inconvenient si je veux que h1 ..h6 est une margin bottom
+1em = 1*taille de police , comme h1 h6 ont des tailles natifs differentes les marges seront differentes
+*/
+
+/****************rem ****************/
+
+/*
+rem ou root em
+
+ici em ne sera pas % a l'element parent mais l'element racine ici html le navigateur
+
+*/
+
+/* Heritage */
+.d1 {
+  /* padding-left: 50px; */
+  margin: auto;
+  height: 150px;
+  width: 150px;
+}
+
+.d2 {   
+  height: 100px;
+  width: 100px;
+}
+
+.d3 {    
+  height: 50px;
+  width: 50px;
+}
+
+.b{
+    border: 1px solid black;
+}
+
+.r{
+    border: 1px solid red;
+}
+
+.g{
+    border: 1px solid green;
+}
