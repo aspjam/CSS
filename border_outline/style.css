@@ -1,0 +1,90 @@
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.s{
+  text-decoration: underline;
+}
+
+
+/* Border */
+.box{
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  background: red;
+  border-left-color: aqua;
+  border-left-width: 10px;
+  border-left-style: solid;
+  border-bottom-color:blue;
+  border-bottom-width: 30px;
+  border-bottom-style: solid;
+  border-right: thick double #32a1ce;;
+  border-top:20px ridge rgba(170, 50, 220, .6);
+}
+
+.box2{
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  background: rgb(255, 157, 0);
+  border:3px dashed blue
+}
+
+/* border-radius */
+
+.box3{
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  background: rgb(255, 157, 0);
+  border:1px solid blue;
+  border-radius: 50%;/*cercle*/
+  border-radius: 10px 50px;
+  border-radius: 10px 25px 50px;
+  border-radius: 10px 25px 50px 30px;
+  border-radius: 50px 50% / 50px 70px;  
+
+}
+
+
+
+
+
+/* outline */
+/*
+Pas de radius
+Pas de outline left right ...
+Les bordures passent au dessus des elements voisins
+*/
+
+.box4{
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  background: rgb(0, 110, 255);
+  outline-color: brown;
+  outline-width: 10px;
+  outline-style: solid;
+  outline:15px dashed rgba(170, 50, 220, .6)
+}
+
+p{
+  margin-top: 0;
+}
+
+
+
+.b{
+    border: 1px solid black;
+}
+
+.r{
+    border: 1px solid red;
+}
+
+.g{
+    border: 1px solid green;
+}
