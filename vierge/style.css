@@ -1,3 +1,9 @@
+*;::after,::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   height: 100vh;
   width: 100%;
@@ -6,6 +12,7 @@ body {
 }
 .s{
   text-decoration: underline;
+  margin-top: 10px;
 }
 
 

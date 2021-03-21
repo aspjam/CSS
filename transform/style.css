@@ -1,0 +1,93 @@
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+  color: #f1f1f1;
+}
+.s{
+  text-decoration: underline;
+  margin: 10px  ;
+}
+
+/*Translate*/
+
+.box{
+  width: 300px;
+  height: 300px;
+  background: salmon;
+  transform:translate(100px,200px);  
+  /*
+  Passe au dessus des elements
+  L'espace créee ne disparait pas
+  */
+}
+
+.box2{
+  width: 300px;
+  height: 300px;
+  background: lightcyan; 
+}
+
+/*Rotate*/
+.rot{
+  width: 300px;
+  height: 300px;
+  background: salmon;
+  margin: 200px auto;
+  
+}
+.rot2{
+  width: 300px;
+  height: 300px;
+  background: lightcyan;  
+  transform-origin: right center;  
+  transform: rotate(45deg);
+}
+
+/*Scale*/
+.scale{
+  width: 300px;
+  height: 300px;
+  background: salmon;
+  margin: 200px auto;
+  
+}
+.scale2{
+  width: 300px;
+  height: 300px;
+  background: lightcyan;
+  transform-origin: top center;   
+  transform:scale(0.5)   
+}
+
+.scale3{
+  width: 300px;
+  height: 300px;
+  background: salmon;
+  margin: 200px auto;
+  
+}
+.scale4{
+  width: 300px;
+  height: 300px;
+  background: lightcyan;
+  transform-origin: center center;   
+  transform:scale(0.5,1.5)   
+}
+
+/*Skew*/
+.sk{
+  width: 300px;
+  height: 300px;
+  background: salmon;
+  margin: 50px auto;
+  
+}
+.sk2{
+  width: 300px;
+  height: 300px;
+  background: lightcyan; 
+  transform:skew(45deg,25deg);
+}
