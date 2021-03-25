@@ -1,0 +1,116 @@
+*;::after,::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #222;
+}
+
+ul{
+  position:absolute;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  top:40%;
+  text-align: center;
+  width: 100%;
+  /* left:50%; */
+  /* transform: translate(-50%,-50%); */
+
+}
+
+ul li{
+ 
+  display: inline-block;
+  letter-spacing: 20px;
+  color:#484848;
+  /* color: #fff900; */
+  font-size: 50px;
+  /* text-shadow: 0 0 7px #fff900,0 0 50px #ff6c00; */
+  /* text-shadow: 0 0 50px #ff6c00; */
+animation: flash 1s linear infinite;
+
+}
+
+/*
+Il faut allumer et eteindre chaque lettre
+l'un apres les autres
+
+P->0 retard et 1 duree 
+_A->1 retards et 1 duree
+__T->2 retards et 1 duree
+___I->3 retards et 1 duree
+...
+________Z->8 retards et 1 duree
+
+et 1retard=1duree d'animation
+
+Probleme lorsqu'on répete 
+avec iteration-count:infinite
+Lorsque la lettre A va s'allumer 
+la lettre P se rallume
+
+Si la durée d'un cycle est d
+la durée pour qu'une lettre s'allume
+et s'eteigne doit etre de d/9 (car 9 lettres)
+Et chaque retard=d/9
+
+si d->100% alors d/9->11.11%
+de 0% a 11% on allume (colorie la lettre)
+11% a 100% on reste au valeur de depart
+
+*/
+
+
+@keyframes flash{  
+  0%{
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900,0 0 50px #ff6c00;
+  }
+  11%{
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900,0 0 50px #ff6c00;
+  }
+  100%{
+    color:#484848;
+    text-shadow:none;
+  }
+}
+
+li:nth-child(1){
+  animation-delay:0s;
+}
+li:nth-child(2){
+  animation-delay:0.11s;
+}
+li:nth-child(3){
+  animation-delay:0.22s;
+}
+li:nth-child(4){
+  animation-delay:0.33s;
+}
+li:nth-child(5){
+  animation-delay:0.44s;
+}
+li:nth-child(6){
+  animation-delay:0.55s;
+}
+li:nth-child(7){
+  animation-delay:0.66s;
+}
+li:nth-child(8){
+  animation-delay:0.77s;
+}
+li:nth-child(9){
+  animation-delay:0.88s;
+}
+
+
+
+
