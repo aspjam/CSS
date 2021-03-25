@@ -1,0 +1,101 @@
+*;::after,::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.s{
+  text-decoration: underline;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/*Animation*/
+
+
+.box1{
+width: 100px; 
+height: 100px;
+margin-bottom: 20px;
+background: salmon;
+/* animation:spin 2s; */
+animation-name:spin;
+animation-duration: 2s;
+/* animation-iteration-count:2; */
+/* animation-iteration-count:infinite; */
+/* animation-iteration-count:0.2; */
+
+/*part de 100% a 0%*/
+/* animation-direction: reverse; */
+
+/*debut fin debut*/
+/* animation-direction: alternate;
+animation-iteration-count:3; */
+
+/*fin debut fin debut*/
+/* animation-direction: alternate-reverse;
+animation-iteration-count:3; */
+
+/* animation-fill-mode: none; */
+
+/*Il s'arrete au debut*/
+/* animation-fill-mode: backwards; */
+
+/*Il s'arrete a la fin*/
+/* animation-fill-mode: forwards; */
+
+
+animation-fill-mode: both;
+
+}
+
+/* .box1:hover{
+  animation-name:spin;
+  animation-duration: 2s;
+} */
+
+@keyframes spin{
+  0%{
+    transform: translate(0px) rotate(0deg);    
+  }
+
+  50%{
+    background: lightblue;
+  }
+
+  60.25%{
+    width: 200px;
+    height: 200px;
+  }
+
+  100%{
+    transform: translate(200px) rotate(180deg);
+    
+  }
+
+}
+
+
+
+
+       
+
+
+
+.b{
+    border: 1px solid black;
+}
+
+.r{
+    border: 1px solid red;
+}
+
+.g{
+    border: 1px solid green;
+}

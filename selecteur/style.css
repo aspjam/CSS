@@ -1,0 +1,162 @@
+*;::after,::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.s{
+  text-decoration: underline;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.bef::before{
+  content: 'before ';
+  font-weight: bold;
+}
+
+.aft::after{
+  content: ' after';
+  font-weight: bold;
+}
+
+/*Selecteur*/
+
+/*Selecteur de type ou elements
+li;li+cl,li+id
+asc et desc
+aft et bef
+*/
+
+/* li{
+  color:red;
+} */
+
+/*---------------------------------------*/
+
+/*Selecteur de classe
+.cl,asc et desc
+asc et desc
+bef et aft
+*/ 
+/* .cl{
+  color:red;
+} */
+
+/*---------------------------------------*/
+
+/*Selecteur d'identifiant
+#id unique
+asc et desc
+*/ 
+/* #id{
+  color:red;
+} */
+
+/*---------------------------------------*/
+
+/*Selecteur universel *
+Tout
+asc et desc
+*/ 
+/* 
+  *{
+    color:red;
+  } 
+*/
+
+/*---------------------------------------*/
+
+/*Selecteur d'attribut*/
+
+/*
+Selectionne les li avec attibut name
+asc et desc
+*/
+/* li[name]
+{
+  color:red;
+} */
+
+
+/*
+Selectionne les li avec attribut name="atb2"
+asc et desc
+*/
+/* li[name="atb2"]
+{
+  color:red;
+} */
+
+/*
+[attribut*=valeur]au mois une occurence ds la chaine de caractere
+[attribut$=valeur]se termine par valeur
+[attribut~=valeur]commence par valeur
+*/
+
+/*Combinateur*/
+
+/*---------------------------------------*/
+
+/*Selecteur voisin direct + 
+A+B tous les B qui suivent immediatement A
+Si ne trouve pas de B regarde ascendant direct
+*/ 
+
+ /* div+li{
+   color:red;
+ }  */
+
+/*---------------------------------------*/
+
+/*Selecteur voisin ~
+A~B : tous les B qui suivent A de meme parent
+*/ 
+
+  /* div~li{
+   color:red;
+ }  */
+
+ /*---------------------------------------*/
+
+/*Selecteur fils >
+A>B : tous les B qui sont directement situe sous un A
+Uniquement toue les fils , descendant de niveau 1
+*/ 
+
+  /* div > li{
+   color:red;
+ }  */
+
+
+/*---------------------------------------*/
+
+/*Selecteur descendant espace
+A B : tous les B qui sont descendants de A
+fils petit fils ....
+*/ 
+
+  div li{
+   color:red;
+ } 
+
+
+.b{
+    border: 1px solid black;
+}
+
+.r{
+    border: 1px solid red;
+}
+
+.g{
+    border: 1px solid green;
+}
+
+.p{padding-left: 40px;}

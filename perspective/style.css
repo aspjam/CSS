@@ -1,0 +1,41 @@
+*;::after,::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  perspective: 200px;
+  perspective-origin: top left;
+}
+.s{
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+.box{
+  width: 200px;
+  height: 200px;
+  background: red;
+  margin: 100px auto;
+  
+  transform: translate3D(0,0,80px);
+}
+
+
+
+.b{
+    border: 1px solid black;
+}
+
+.r{
+    border: 1px solid red;
+}
+
+.g{
+    border: 1px solid green;
+}
