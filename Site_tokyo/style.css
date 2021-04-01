@@ -22,6 +22,7 @@ nav{
   position: fixed;
   height: 70px;
   width: 100%;
+  top:0px;
   border-bottom: 1px dotted #f1f1f1;
   /* background: #333; */
   background:linear-gradient(to bottom ,#333,#626262 ) ;
@@ -79,7 +80,7 @@ nav{
   width: 100%;
 }
 
-/*--------------Navigation Responsive--------------*/
+/*--------------Responsive Navigation--------------*/
 
 @media screen and (max-width: 700px) {
   
@@ -112,11 +113,139 @@ nav{
 
 }
 
-@media screen and (min-width: 700px) {
-  
+/*--------------Section Accueil--------------*/
+.accueil{
+  width: 100%;
+  height: 100vh;
+  background-image: url(/ressources/accueil-pic-lum-down.jpg);
+  background-position: center;
+  background-size: cover;
+
+  /*Evite fusion des marges haut et bas
+  Si on met une marge top a image 
+  L'accueil va se decaler de la marge
+  a cause de la fusion   
+  */
+  padding-top: 1px;
+  border-bottom: 1px dotted #777;
 }
 
+.logo-kyoto{
+  border-radius: 100px;
+  width: 180px; 
+  display: block;
+  /*Haut|Horizontal|Bas*/
+  margin: 180px auto 0;
+}
 
+.accueil h1{
+  font-size: 100px;
+  text-align: center;
+  text-shadow: 0 10px 10px #000;
+  margin: 10px 0 0 0;
+  font-family: "Merienda One",sans-serif;
+  color:#f1f1f1
+}
+
+.sous-titre{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color:#f1f1f1;
+  margin: 5px 0;
+  text-shadow: 0 0px 10px #000;
+}
+
+.btn-accueil{
+  border-radius: 100px;
+  background: crimson;
+  border: 1px solid #333;
+  color:#f1f1f1;
+  display: block;
+  width: 200px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 30px auto;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.btn-accueil:hover{
+  background:rgb(177,0,36);
+  color:#fff;
+}
+
+/*--------------Responsive Section Accueil--------------*/
+
+@media screen and (max-width:850px) {
+  
+  .accueil{
+    height: 650px;/*100vh*/
+  }
+
+  .logo-kyoto{
+    margin: 120px auto 0;/* margin: 180px auto 0; */
+  }
+
+  .accueil h1{
+    font-size: 60px;/* font-size: 100px; */
+  }
+
+  .sous-titre{
+    font-size: 23px;/*font-size: 40px;*/
+
+  }
+
+  .btn-accueil{
+    width: 150px;/*200*/
+    height: 50px;/*70*/
+    line-height: 50px;
+    font-size: 18px;/*22*/
+    margin: 15px auto 0;/*30*/
+  }
+
+
+}
+
+@media screen and (max-width:400px) {
+  
+  .accueil{
+    height: 550px;/*650px*/
+  }
+
+  .logo-kyoto{
+    width: 150px;/*180px*/
+    margin: 110px auto 0;/* margin: 120px auto 0; */
+  }
+
+  .accueil h1{
+    font-size: 35px;/* font-size: 60px; */
+  }
+
+  .sous-titre{
+    font-size: 20px;/*font-size: 23px;*/
+
+  }
+
+  .btn-accueil{
+    width: 130px;/*150*/
+    height: 45px;/*50*/
+    line-height: 45px;
+    font-size: 16px;/*18*/
+    /* margin: 15px auto 0; */
+  }
+
+  .logo-menu{
+    /* top:15px; */
+    width: 35px;
+  }
+
+
+}
 
 
 
