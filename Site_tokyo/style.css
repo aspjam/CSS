@@ -46,6 +46,8 @@ nav{
   display: flex;
   list-style: none;
   justify-content: center;
+  border-bottom: 1px dotted #f1f1f1;
+
 }
 
 /*menu li*/
@@ -77,8 +79,42 @@ nav{
   width: 100%;
 }
 
+/*--------------Navigation Responsive--------------*/
 
+@media screen and (max-width: 700px) {
+  
+  /* Affiche le logo */
+  .logo-menu{
+    display: block;
+  }
 
+  /*Menu ul */
+  .list-nav{
+    display:none;
+    flex-direction: column;
+    height: auto;
+    align-items: center; 
+  }
+
+  .list-nav.active{
+    display: flex;
+  }
+
+  /*Menu li*/
+  .item-nav{
+    height: 70px;    
+  }
+
+  /*Decale Menu Accueil de 70px*/
+  .item-nav:nth-child(1){
+    margin-top: 70px;
+  }
+
+}
+
+@media screen and (min-width: 700px) {
+  
+}
 
 
 
