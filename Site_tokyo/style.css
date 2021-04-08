@@ -23,6 +23,7 @@ nav{
   height: 70px;
   width: 100%;
   top:0px;
+  z-index:100;
   border-bottom: 1px dotted #f1f1f1;
   /* background: #333; */
   background:linear-gradient(to bottom ,#333,#626262 ) ;
@@ -244,7 +245,6 @@ nav{
     width: 35px;
   }
 
-
 }
 
 
@@ -268,42 +268,99 @@ nav{
   padding-top: 50px;
 }
 
-/*Bloc-1*/
-.bloc-1{
-  background: #333;
-  color:#f1f1f1;
+/*Bloc-1 et Bloc-3*/
+.bloc-1{  
   grid-area:3/2/8/3;
+}
+
+.bloc-3{
+  grid-area:17/2/22/3;
+}
+
+.bloc-left{
+  background: #333;
+  color:#f1f1f1;  
   position: relative;
   left:100px;
   border-radius: 2px; 
-
 }
 
-.bloc-1 img{
+.bloc-left img{
   position: absolute;
   left: 300px;
   top:100px;
   width: 100%;
 }
 
-.bloc-txt-1{
+.bloc-txt-left{
   width: 50%;
   height: 100%;
 }
 
-.bloc-txt-1 h3{
+.bloc-txt-left h3{
   width: 150% !important; 
   font-size: 35px;
   margin: 15px 0;
   padding: 15px;
 }
 
-.bloc-txt-1 p{
+.bloc-txt-left p{
   line-height: 40px;
   padding: 15px;
 }
 
 .btn-bloc-left{
+  border-radius: 9999px;
+  outline: 0;
+  border: 0;
+  background: crimson;
+  border: 1px solid #333;
+  color: #f1f1f1;
+  padding: 20px 35px;
+  cursor: pointer;
+  margin: 10px auto;
+  display: block;
+}
+
+/*Bloc-2*/
+
+.bloc-2{
+grid-area: 10/4/15/5;
+background: #333;
+color: #f1f1f1;
+position: relative;
+right: 100px;
+}
+
+.bloc-2 img{
+  position: absolute;
+  right: 300px;
+  top:100px;
+  width: 100%;
+}
+
+.bloc-txt-2{
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.bloc-txt-2 h3{
+  position: relative;
+  width: 150% !important;
+  right: 50px; 
+  font-size: 35px;
+  margin: 15px 0;
+  padding: 15px;
+}
+
+.bloc-txt-2 p{
+  line-height: 40px;
+  padding: 15px;
+}
+
+.bloc-2 button{
   border-radius: 9999px;
   outline: 0;
   border: 0;
@@ -322,12 +379,7 @@ nav{
 
 
 
-/* .parent{
-  padding: 5px;
-  height: 300px;
-  display: grid;
-  grid-template-rows:3fr 2fr;
-} */
+
 
 
   
