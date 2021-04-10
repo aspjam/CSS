@@ -8,10 +8,12 @@
     <title>Site Tokyo</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+    <!-- navigation -->
     <nav class="">
         <ul class="list-nav ">
             <li class="item-nav "><a href="#home">Accueil</a></li>
@@ -19,9 +21,10 @@
             <li class="item-nav "><a href="#tarifs">Tarifs</a></li>
             <li class="item-nav "><a href="#contact">Contact</a></li>
         </ul>
-        <img class="logo-menu " src="/ressources/menu.svg" alt="logo menu" >
-    </nav> 
+        <img class="logo-menu " src="/ressources/menu.svg" alt="logo menu">
+    </nav>
 
+    <!-- Accueil -->
     <div class="accueil" id="home">
         <img class="logo-kyoto" src="ressources/logo-porte-japon.jpg" alt="porte traditionnelle du japon">
         <h1>Découvrez Kyoto</h1>
@@ -29,9 +32,52 @@
         <a href="#asym" class="btn-accueil">En savoir plus</a>
     </div>
 
-    <br><br><br><br><br><br><br><br>
+    <!-- Section Asymetrique -->
 
-   
-<script src="app.js"></script>
+    <section class="section-asymetrique" id="asym">
+
+        <h2>Que faire a Kyoto</h2>
+
+        <div class="bloc-left bloc-1">
+            <div class="bloc-txt-left">
+                <h3>Visitez architecture</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid ipsam quasi rerum iusto explicabo
+                    laboriosam blanditiis, consequatur vero officiis alias itaque voluptas, animi sequi reiciendis nihil
+                    quaerat doloremque! Voluptate sed ratione assumenda illo aliquam odit officia, ipsam temporibus
+                    libero
+                    sapiente commodi nostrum culpa ullam quos minima dicta veniam, enim aliquid!</p>
+                <button class="btn-bloc-left">En savoir plus </button>  
+            </div>
+            <img src="/Site_tokyo/ressources/kyoto-temple.jpg" alt="Maison kyoto">
+        </div>       
+
+        <div class="bloc-2">
+            <div class="bloc-txt-2">
+                <h3>Visitez architecture</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid ipsam quasi rerum iusto explicabo laboriosam blanditiis, consequatur vero officiis alias itaque voluptas, animi sequi reiciendis nihil quaerat doloremque! Voluptate sed ratione assumenda illo aliquam odit officia, ipsam temporibus libero sapiente commodi nostrum culpa ullam quos minima dicta veniam, enim aliquid!</p>
+                <button >En savoir plus</button>
+            </div>
+            <img src="/Site_tokyo/ressources/chateau-kyoto.jpg" alt="Chateau kyoto">
+        </div>
+
+        <div class="bloc-left bloc-3">
+            <div class="bloc-txt-left">
+                <h3>Visitez architecture</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid ipsam quasi rerum iusto explicabo laboriosam blanditiis, consequatur vero officiis alias itaque voluptas, animi sequi reiciendis nihil quaerat doloremque! Voluptate sed ratione assumenda illo aliquam odit officia, ipsam temporibus libero sapiente commodi nostrum culpa ullam quos minima dicta veniam, enim aliquid!</p>
+                <button class="btn-bloc-left">En savoir plus</button>
+            </dic>
+            <img src="/Site_tokyo/ressources/geisha.jpg" alt="une geisha">
+        </div>    
+
+        <!-- <div class="ligne-gauche"></div>
+        <div class="ligne-milieu"></div>
+        <div class="ligne-droite"></div> -->
+
+    </section>
+
+    <br><br><br><br><br>
+    
+    <script src="app.js"></script>
 </body>
+
 </html>
